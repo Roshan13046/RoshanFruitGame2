@@ -1,0 +1,224 @@
+html {
+    height: 100%;
+    background: radial-gradient(circle, #ccc, darkred, orange, red, lightyellow, red, yellow, lightgreen, green, skyblue, blue, violet, pink);
+}
+
+#container {
+    height: 550px;
+    width: 1000px;
+    background: linear-gradient(orange, white, violet);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+    /*    box-shadow: [horizontal offset][vertical offset][blur radius][optional spread radius][color]*/
+    box-shadow: 5px 5px 10px 0px white;
+    -moz-box-shadow: 5px 5px 10px 0px white;
+    -webkit-box-shadow: 5px 5px 10px 0px white;
+    position: relative;
+}
+
+#trialsLeft {
+    width: 150px;
+    height: 50px;
+    background: radial-gradient(white, blue);
+
+    top: 5px;
+    left: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px aqua;
+    -moz-box-shadow: 0px 5px 10px 0px aqua;
+    -webkit-box-shadow: 0px 5px 10px 0px aqua;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    display: none;
+}
+
+#correct {
+    background-color: lawngreen;
+    color: white;
+    padding: 8px;
+    position: absolute;
+    left: 250px;
+    box-shadow: 0px 4px 2px 0px white;
+    -moz-box-shadow: 0px 4px 2px 0px white;
+    -webkit-box-shadow: 0px 4px 2px 0px white;
+    border-radius: 5px;
+    display: none;
+}
+
+#wrong {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    position: absolute;
+    left: 250px;
+    box-shadow: 0px 4px 2px 0px white;
+    -moz-box-shadow: 0px 4px 2px 0px white;
+    -webkit-box-shadow: 0px 4px 2px 0px white;
+    border-radius: 0px;
+    display: none;
+}
+
+#fruitContainer {
+    width: 900px;
+    height: 400px;
+
+    margin: 50px auto 0px auto;
+    background: radial-gradient(white, lightblue, white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0px red;
+    -moz-box-shadow: 5px 5px 10px 0px red;
+    -webkit-box-shadow: 5px 5px 10px 0px red;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+#instruction {
+    width: 450px;
+    height: 50px;
+    margin: 5px auto;
+    margin-top: 10px;
+    background: linear-gradient(violet, white, purple);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0px blue;
+    -moz-box-shadow: 5px 5px 10px 0px blue;
+    -webkit-box-shadow: 5px 5px 10px 0px blue;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+}
+
+#choices {
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.box {
+    width: 85px;
+    height: 85px;
+    background: radial-gradient(white, yellow);
+    float: left;
+    margin-top: 20px;
+    margin-right: 36px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px red;
+    -moz-box-shadow: 0px 5px 10px 0px red;
+    -webkit-box-shadow: 0px 5px 10px 0px red;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    /*    take care of croos browser compatibility*/
+    transition: all 0.2s;
+    /*    for safari*/
+    -webkit-transition: all 0.2s;
+    /*    //for mozilla*/
+    -moz-transition: all 0.2s;
+    /*    //for opera*/
+    -o-transition: all 0.2s;
+    /*    for ms Excel*/
+    -ms-transition: all 0.2s;
+}
+
+.box:hover,
+#startReset:hover {
+    background: radial-gradient(red, black);
+    color: ghostwhite;
+    box-shadow: 0px 4px 10px 0px green;
+    -moz-box-shadow: 0px 4px 10px 0px green;
+    -webkit-box-shadow: 0px 4px 10px 0px green;
+}
+
+.box:active,
+#startReset:active {
+    box-shadow: 0px 0px red;
+    -moz-box-shadow: 0px 0px red;
+    -webkit-box-shadow: 0px 0px red;
+    top: 4px;
+}
+
+#box4 {
+    margin-right: 0;
+}
+
+#startReset {
+    width: 80px;
+    padding: 10px;
+    background: linear-gradient(white, red);
+    color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px aqua;
+    -moz-box-shadow: 0px 5px 10px 0px aqua;
+    -webkit-box-shadow: 0px 5px 10px 0px aqua;
+    text-align: center;
+    position: relative;
+    /*    take care of croos browser compatibility*/
+    transition: all 0.2s;
+    /*    for safari*/
+    -webkit-transition: all 0.2s;
+    /*    //for mozilla*/
+    -moz-transition: all 0.2s;
+    /*    //for opera*/
+    -o-transition: all 0.2s;
+    /*    for ms Excel*/
+    -ms-transition: all 0.2s;
+
+}
+
+#score {
+
+    width: 150px;
+    height: 50px;
+    background: radial-gradient(white, green);
+    top: 5px;
+    left: 822px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px lightgreen;
+    -moz-box-shadow: 0px 5px 10px 0px lightgreen;
+    -webkit-box-shadow: 0px 5px 10px 0px lightgreen;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+}
+
+#gameOver {
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(blue, aqua);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 150px;
+    left: 275px;
+    /*
+    we make sure that GameOver div appear at top of all the other div so give it 
+     a value greater than 0
+*/
+    z-index: 2;
+    display: none;
+}
+
+.life {
+    padding-top: 10px;
+    width: 35px;
+    height: 20px;
+    margin: 0 5px;
+
+}
+
+.fruit {
+    display: none;
+    position: absolute;
+}
