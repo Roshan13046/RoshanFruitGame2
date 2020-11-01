@@ -1,5 +1,7 @@
 # Professional Drawing WebApp
 
+![FruitSliceGame](https://user-images.githubusercontent.com/55108788/97798597-7d966580-1c4d-11eb-8dcc-70112f7b9688.png)
+
 This Project is made as a part of Learning  Web Development. 
 
 This webpage is made right from scratch to create a dynamic Fruit Slice Game with Audio sound.
